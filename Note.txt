@@ -1,3 +1,25 @@
-1.Asmx
-2.WCF
-3.Push notification from server
+-Push notification from server to client
+	-detail scenario for requirement
+
+	Asmx
+		-Support SOAP only
+		-Can only respone based on specific request.
+		-Cannot send message to client, it means it cannot broadcast.
+		
+	WCF
+		-Binding
+			-webHttpBinding
+				-support Rest 
+			-basicHttpBinding
+				-soap v1 (same as Asmx)
+			-wsHttpBinding
+				-soap v2 (more secure)
+			-wsDualHttpBinding
+				-Support callback
+				-Support soap only but not restfull
+				
+	
+	SignalR Web Service
+		-very simple
+		-There is no binding
+		-It support rest
